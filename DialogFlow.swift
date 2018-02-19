@@ -34,7 +34,7 @@ enum DialogFlow {
         
         var request = URLRequest(url: endpointURL)
         request.httpMethod = "POST"
-        request.addValue("Bearer 7e0acfec4cea4c63828cb239e6a10aab", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer API_KEY", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let json: [String: String] = ["lang": "en",
